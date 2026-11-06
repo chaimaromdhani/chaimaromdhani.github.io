@@ -73,26 +73,23 @@ footer{padding:28px 0 48px;color:var(--muted);font-size:14px;border-top:1px soli
     <h2>Projets</h2>
     <div class="grid">
       <article class="card"><h3>Analyse de malware<span class="status">Remcos RAT</span></h3>
-        <p>Analyse statique et dynamique d'un échantillon, avec injection LSASS, persistance par registre, IOC et cartographie MITRE ATT&amp;CK.</p>
-        <div class="chips"><span class="chip">PEstudio</span><span class="chip">CAPE Sandbox</span><span class="chip">Hybrid Analysis</span><span class="chip">MITRE ATT&amp;CK</span></div></article>
-      <article class="card"><h3>Forensic numérique</h3>
-        <p>Investigation sur le trafic réseau, la mémoire RAM et le disque, avec reconstitution de la chronologie et détection par signatures.</p>
-        <div class="chips"><span class="chip">Volatility 3</span><span class="chip">Autopsy</span><span class="chip">Wireshark</span><span class="chip">YARA</span><span class="chip">CyberChef</span></div></article>
+        <p>Analyse automatique, statique et dynamique d'un échantillon : packing, injection dans LSASS, anti-sandbox et extraction d'IOC.</p>
+        <div class="chips"><span class="chip">CAPE Sandbox</span><span class="chip">Cutter</span><span class="chip">VirusTotal</span><span class="chip">Manalyze</span></div></article>
+      <article class="card"><h3>DFIR : compromission par phishing</h3>
+        <p>Simulation d'attaque en laboratoire isolé, détection (Sysmon, Wazuh, Suricata), analyse mémoire, règle YARA et reconstitution de la chaîne d'attaque avec MITRE ATT&amp;CK.</p>
+        <div class="chips"><span class="chip">Volatility 3</span><span class="chip">Wazuh</span><span class="chip">Suricata</span><span class="chip">YARA</span><span class="chip">NIST 800-61</span></div></article>
       <article class="card"><h3>Audit Active Directory<span class="status">red team</span></h3>
         <p>Attaque d'un lab GOAD : Kerberoasting, AS-REP Roasting, Pass-the-Hash/Ticket, DCSync, puis rapport de remédiation (Tiered Admin).</p>
         <div class="chips"><span class="chip">GOAD</span><span class="chip">BloodHound</span><span class="chip">Kerberos</span></div></article>
-      <article class="card"><h3>Pentest web OWASP Top 10</h3>
-        <p>Exploitation de Juice Shop et DVWA : SQLi, XSS, IDOR, SSRF, authentification défaillante, avec rapport et preuves.</p>
-        <div class="chips"><span class="chip">Burp Suite</span><span class="chip">OWASP</span><span class="chip">SQLi</span><span class="chip">XSS</span></div></article>
+      <article class="card"><h3>Pentest web OWASP Juice Shop</h3>
+        <p>Exploitation de Juice Shop : injection SQL, XSS, IDOR, JWT falsifié (alg none) et fichiers exposés, avec recommandations de correction.</p>
+        <div class="chips"><span class="chip">Burp Suite</span><span class="chip">Nmap</span><span class="chip">Gobuster</span><span class="chip">JWT</span></div></article>
       <article class="card"><h3>DevSecOps : portail de notes<span class="status">en cours</span></h3>
         <p>Application volontairement vulnérable, image Docker durcie, pipeline CI/CD bloquant, secrets, Kubernetes, DAST, plan de réponse à incident, et chatbot RAG protégé par un pare-feu LLM contre les injections de prompt.</p>
         <div class="chips"><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">CI/CD</span><span class="chip">DAST</span><span class="chip">LLM security</span></div></article>
-      <article class="card"><h3>DevSecOps avec LLM</h3>
-        <p>Pipeline CI/CD avec analyse statique Semgrep et un LLM qui propose des correctifs aux vulnérabilités détectées.</p>
-        <div class="chips"><span class="chip">Semgrep</span><span class="chip">SAST</span><span class="chip">LLM</span></div></article>
-      <article class="card"><h3>SOC intelligent</h3>
-        <p>Chaîne de détection avec pfSense, Wazuh, Suricata et Sysmon, complétée par une détection par Machine Learning.</p>
-        <div class="chips"><span class="chip">Wazuh</span><span class="chip">Suricata</span><span class="chip">Sysmon</span><span class="chip">pfSense</span></div></article>
+      <article class="card"><h3>PatchMind<span class="status">en binôme</span></h3>
+        <p>Plateforme DevSecOps qui centralise Semgrep, GitLeaks, Snyk et ZAP, génère des correctifs avec des LLM (RAG, FAISS) et les valide automatiquement. 96,2 % de réussite en test.</p>
+        <div class="chips"><span class="chip">Flask</span><span class="chip">FAISS</span><span class="chip">RAG</span><span class="chip">GitHub Actions</span></div></article>
     </div>
   </section>
 
@@ -114,8 +111,8 @@ footer{padding:28px 0 48px;color:var(--muted);font-size:14px;border-top:1px soli
       <div class="card"><h3>Sécurité offensive</h3><div class="chips"><span class="chip">Metasploit</span><span class="chip">Burp Suite</span><span class="chip">Nmap</span><span class="chip">Nessus</span><span class="chip">BloodHound</span></div></div>
       <div class="card"><h3>Réseau et défense</h3><div class="chips"><span class="chip">pfSense</span><span class="chip">Suricata</span><span class="chip">Snort</span><span class="chip">Wireshark</span><span class="chip">VPN</span><span class="chip">VLAN</span><span class="chip">MPLS</span></div></div>
       <div class="card"><h3>SIEM / SOC</h3><div class="chips"><span class="chip">Wazuh</span><span class="chip">Sysmon</span><span class="chip">Elasticsearch</span><span class="chip">Grafana</span></div></div>
-      <div class="card"><h3>Malware et forensic</h3><div class="chips"><span class="chip">Ghidra</span><span class="chip">Cutter</span><span class="chip">x64dbg</span><span class="chip">Volatility 3</span><span class="chip">Autopsy</span><span class="chip">YARA</span></div></div>
-      <div class="card"><h3>DevSecOps</h3><div class="chips"><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Semgrep</span><span class="chip">DAST</span><span class="chip">RAG</span></div></div>
+      <div class="card"><h3>Malware et forensic</h3><div class="chips"><span class="chip">CAPE Sandbox</span><span class="chip">Cutter</span><span class="chip">REMnux</span><span class="chip">Volatility 3</span><span class="chip">YARA</span></div></div>
+      <div class="card"><h3>DevSecOps</h3><div class="chips"><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Semgrep</span><span class="chip">ZAP</span><span class="chip">RAG</span></div></div>
       <div class="card"><h3>Systèmes et développement</h3><div class="chips"><span class="chip">Linux</span><span class="chip">Windows Server</span><span class="chip">Python</span><span class="chip">Bash</span><span class="chip">PowerShell</span></div></div>
     </div>
     <p style="color:var(--muted);margin-top:18px;font-size:15px">Certifications : Cisco Cybersecurity Essentials, Cisco Introduction to Cybersecurity, EC-Council Ethical Hacking Essentials. CompTIA Security+ en préparation. Langues : arabe, français (C1), anglais (B2).</p>
