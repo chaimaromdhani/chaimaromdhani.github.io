@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chaima Romdhani | Portfolio cybersécurité</title>
+<meta name="description" content="Portfolio de Chaima Romdhani, élève ingénieure en sécurité des systèmes informatiques et réseaux (TEK-UP). Pentest, SOC, forensic, DevSecOps.">
+<style>
+:root{--bg:#0d1117;--panel:#161b22;--line:#262d38;--text:#e6edf3;--muted:#9aa7b4;--accent:#3fb6a8;--accent2:#7aa2f7}
+@media (prefers-color-scheme:light){:root{--bg:#f6f8fa;--panel:#ffffff;--line:#d8dee4;--text:#1f2328;--muted:#59636e;--accent:#0b7a6e;--accent2:#3b5bdb}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:5}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+.logo{font-family:ui-monospace,Menlo,Consolas,monospace;font-weight:600;color:var(--text)}
+.logo span{color:var(--accent)}
+nav a{color:var(--muted);margin-left:18px;font-size:14px}
+nav a:hover{color:var(--text);text-decoration:none}
+.hero{padding:72px 0 40px}
+.hero .tag{font-family:ui-monospace,Menlo,Consolas,monospace;color:var(--accent);font-size:14px}
+.hero h1{font-size:clamp(34px,6vw,52px);line-height:1.1;margin:8px 0 12px}
+.hero p.lead{font-size:19px;color:var(--muted);max-width:680px;margin:0 0 24px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:9px 16px;border-radius:6px;border:1px solid var(--line);color:var(--text);font-size:14px;font-weight:500}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#04140f}
+.btn:hover{text-decoration:none;border-color:var(--accent)}
+section{padding:40px 0;border-top:1px solid var(--line)}
+h2{font-size:22px;margin:0 0 20px;display:flex;align-items:center;gap:10px}
+h2::before{content:"#";color:var(--accent);font-family:ui-monospace,Menlo,monospace}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px}
+.card h3{margin:0 0 6px;font-size:17px}
+.card p{margin:0 0 12px;color:var(--muted);font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--accent2)}
+.status{font-size:12px;color:var(--muted);margin-left:6px;font-weight:400}
+.tl{border-left:2px solid var(--line);margin-left:6px;padding-left:20px}
+.tl .item{position:relative;margin-bottom:24px}
+.tl .item::before{content:"";position:absolute;left:-27px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.tl h3{margin:0;font-size:17px}
+.tl .meta{color:var(--muted);font-size:14px;margin-bottom:6px}
+.tl ul{margin:6px 0 0;padding-left:18px;color:var(--muted);font-size:15px}
+.skills{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.skills h3{margin:0 0 8px;font-size:15px;color:var(--text)}
+.contact p{color:var(--muted);max-width:620px}
+footer{padding:28px 0 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:600px){.logo{display:none}header.top .wrap{justify-content:center}nav a{margin:0 9px}.hero{padding-top:44px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="#top">chaima<span>@</span>sec</a>
+  <nav><a href="#projets">Projets</a><a href="#parcours">Parcours</a><a href="#competences">Compétences</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="top" class="wrap">
+  <div class="hero">
+    <div class="tag">$ whoami</div>
+    <h1>Chaima Romdhani</h1>
+    <p class="lead">Élève ingénieure en sécurité des systèmes informatiques et réseaux à TEK-UP. Je travaille sur le test d'intrusion, l'analyse de malwares, le forensic et le DevSecOps. Je recherche un stage PFE en sécurité offensive, SOC ou DevSecOps.</p>
+    <div class="btns">
+      <a class="btn primary" href="#contact">Me contacter</a>
+      <a class="btn" href="https://github.com/chaimaromdhani">GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/chaimaromdhani">LinkedIn</a>
+    </div>
+  </div>
+
+  <section id="projets">
+    <h2>Projets</h2>
+    <div class="grid">
+      <article class="card"><h3>Analyse de malware<span class="status">Remcos RAT</span></h3>
+        <p>Analyse statique et dynamique d'un échantillon, avec injection LSASS, persistance par registre, IOC et cartographie MITRE ATT&amp;CK.</p>
+        <div class="chips"><span class="chip">PEstudio</span><span class="chip">CAPE Sandbox</span><span class="chip">Hybrid Analysis</span><span class="chip">MITRE ATT&amp;CK</span></div></article>
+      <article class="card"><h3>Forensic numérique</h3>
+        <p>Investigation sur le trafic réseau, la mémoire RAM et le disque, avec reconstitution de la chronologie et détection par signatures.</p>
+        <div class="chips"><span class="chip">Volatility 3</span><span class="chip">Autopsy</span><span class="chip">Wireshark</span><span class="chip">YARA</span><span class="chip">CyberChef</span></div></article>
+      <article class="card"><h3>Audit Active Directory<span class="status">red team</span></h3>
+        <p>Attaque d'un lab GOAD : Kerberoasting, AS-REP Roasting, Pass-the-Hash/Ticket, DCSync, puis rapport de remédiation (Tiered Admin).</p>
+        <div class="chips"><span class="chip">GOAD</span><span class="chip">BloodHound</span><span class="chip">Kerberos</span></div></article>
+      <article class="card"><h3>Pentest web OWASP Top 10</h3>
+        <p>Exploitation de Juice Shop et DVWA : SQLi, XSS, IDOR, SSRF, authentification défaillante, avec rapport et preuves.</p>
+        <div class="chips"><span class="chip">Burp Suite</span><span class="chip">OWASP</span><span class="chip">SQLi</span><span class="chip">XSS</span></div></article>
+      <article class="card"><h3>DevSecOps : portail de notes<span class="status">en cours</span></h3>
+        <p>Application volontairement vulnérable, image Docker durcie, pipeline CI/CD bloquant, secrets, Kubernetes, DAST, plan de réponse à incident, et chatbot RAG protégé par un pare-feu LLM contre les injections de prompt.</p>
+        <div class="chips"><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">CI/CD</span><span class="chip">DAST</span><span class="chip">LLM security</span></div></article>
+      <article class="card"><h3>DevSecOps avec LLM</h3>
+        <p>Pipeline CI/CD avec analyse statique Semgrep et un LLM qui propose des correctifs aux vulnérabilités détectées.</p>
+        <div class="chips"><span class="chip">Semgrep</span><span class="chip">SAST</span><span class="chip">LLM</span></div></article>
+      <article class="card"><h3>SOC intelligent</h3>
+        <p>Chaîne de détection avec pfSense, Wazuh, Suricata et Sysmon, complétée par une détection par Machine Learning.</p>
+        <div class="chips"><span class="chip">Wazuh</span><span class="chip">Suricata</span><span class="chip">Sysmon</span><span class="chip">pfSense</span></div></article>
+    </div>
+  </section>
+
+  <section id="parcours">
+    <h2>Parcours</h2>
+    <div class="tl">
+      <div class="item"><h3>Stagiaire, test d'intrusion web (grey-box)</h3><div class="meta">IBS Informatique · juillet – août 2026</div>
+        <ul><li>Test d'intrusion autorisé d'une application Spring Boot / JWT, avec identifiants de test.</li><li>Énumération, tests d'autorisation par rôle, IDOR et injections avec Burp Suite.</li><li>Rapport de vulnérabilités avec recommandations de correction.</li></ul></div>
+      <div class="item"><h3>Cycle ingénieur, Sécurité des Systèmes Informatiques et Réseaux</h3><div class="meta">TEK-UP University · depuis septembre 2024</div></div>
+      <div class="item"><h3>Stagiaire PFE, développement web et mobile</h3><div class="meta">Tunisie Telecom · février – juin 2023</div>
+        <ul><li>Application web et mobile de gestion des dérangements ADSL (PHP, Flutter, Firebase, API REST).</li></ul></div>
+      <div class="item"><h3>Licence en Télécommunications et Réseaux</h3><div class="meta">ISITCOM, Hammam Sousse · 2019 – 2023</div></div>
+    </div>
+  </section>
+
+  <section id="competences">
+    <h2>Compétences</h2>
+    <div class="skills">
+      <div class="card"><h3>Sécurité offensive</h3><div class="chips"><span class="chip">Metasploit</span><span class="chip">Burp Suite</span><span class="chip">Nmap</span><span class="chip">Nessus</span><span class="chip">BloodHound</span></div></div>
+      <div class="card"><h3>Réseau et défense</h3><div class="chips"><span class="chip">pfSense</span><span class="chip">Suricata</span><span class="chip">Snort</span><span class="chip">Wireshark</span><span class="chip">VPN</span><span class="chip">VLAN</span><span class="chip">MPLS</span></div></div>
+      <div class="card"><h3>SIEM / SOC</h3><div class="chips"><span class="chip">Wazuh</span><span class="chip">Sysmon</span><span class="chip">Elasticsearch</span><span class="chip">Grafana</span></div></div>
+      <div class="card"><h3>Malware et forensic</h3><div class="chips"><span class="chip">Ghidra</span><span class="chip">Cutter</span><span class="chip">x64dbg</span><span class="chip">Volatility 3</span><span class="chip">Autopsy</span><span class="chip">YARA</span></div></div>
+      <div class="card"><h3>DevSecOps</h3><div class="chips"><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Semgrep</span><span class="chip">DAST</span><span class="chip">RAG</span></div></div>
+      <div class="card"><h3>Systèmes et développement</h3><div class="chips"><span class="chip">Linux</span><span class="chip">Windows Server</span><span class="chip">Python</span><span class="chip">Bash</span><span class="chip">PowerShell</span></div></div>
+    </div>
+    <p style="color:var(--muted);margin-top:18px;font-size:15px">Certifications : Cisco Cybersecurity Essentials, Cisco Introduction to Cybersecurity, EC-Council Ethical Hacking Essentials. CompTIA Security+ en préparation. Langues : arabe, français (C1), anglais (B2).</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Je recherche un stage PFE en cybersécurité. Écrivez-moi pour échanger sur une opportunité.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:chaimaromdhani710@gmail.com">chaimaromdhani710@gmail.com</a>
+      <a class="btn" href="https://linkedin.com/in/chaimaromdhani">LinkedIn</a>
+      <a class="btn" href="https://github.com/chaimaromdhani">GitHub</a>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">© 2026 Chaima Romdhani · Ariana, Tunisie</div></footer>
+</body>
+</html>
