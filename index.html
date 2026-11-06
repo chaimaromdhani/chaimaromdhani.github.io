@@ -37,7 +37,7 @@ h2::before{content:"#";color:var(--accent);font-family:ui-monospace,Menlo,monosp
 .card p{margin:0 0 12px;color:var(--muted);font-size:15px}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chip{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--accent2)}
-.status{font-size:12px;color:var(--muted);margin-left:6px;font-weight:400}
+.repo{margin:12px 0 0;font-size:14px}.status{font-size:12px;color:var(--muted);margin-left:6px;font-weight:400}
 .tl{border-left:2px solid var(--line);margin-left:6px;padding-left:20px}
 .tl .item{position:relative;margin-bottom:24px}
 .tl .item::before{content:"";position:absolute;left:-27px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--accent)}
@@ -74,22 +74,31 @@ footer{padding:28px 0 48px;color:var(--muted);font-size:14px;border-top:1px soli
     <div class="grid">
       <article class="card"><h3>Analyse de malware<span class="status">Remcos RAT</span></h3>
         <p>Analyse automatique, statique et dynamique d'un échantillon : packing, injection dans LSASS, anti-sandbox et extraction d'IOC.</p>
-        <div class="chips"><span class="chip">CAPE Sandbox</span><span class="chip">Cutter</span><span class="chip">VirusTotal</span><span class="chip">Manalyze</span></div></article>
+        <div class="chips"><span class="chip">CAPE Sandbox</span><span class="chip">Cutter</span><span class="chip">VirusTotal</span><span class="chip">Manalyze</span></div>
+        <p class="repo"><a href="https://github.com/chaimaromdhani/remcos-rat-malware-analysis">Voir le dépôt →</a></p></article>
       <article class="card"><h3>DFIR : compromission par phishing</h3>
         <p>Simulation d'attaque en laboratoire isolé, détection (Sysmon, Wazuh, Suricata), analyse mémoire, règle YARA et reconstitution de la chaîne d'attaque avec MITRE ATT&amp;CK.</p>
-        <div class="chips"><span class="chip">Volatility 3</span><span class="chip">Wazuh</span><span class="chip">Suricata</span><span class="chip">YARA</span><span class="chip">NIST 800-61</span></div></article>
+        <div class="chips"><span class="chip">Volatility 3</span><span class="chip">Wazuh</span><span class="chip">Suricata</span><span class="chip">YARA</span><span class="chip">NIST 800-61</span></div>
+        <p class="repo"><a href="https://github.com/chaimaromdhani/dfir-phishing-investigation">Voir le dépôt →</a></p></article>
       <article class="card"><h3>Audit Active Directory<span class="status">red team</span></h3>
         <p>Attaque d'un lab GOAD : Kerberoasting, AS-REP Roasting, Pass-the-Hash/Ticket, DCSync, puis rapport de remédiation (Tiered Admin).</p>
-        <div class="chips"><span class="chip">GOAD</span><span class="chip">BloodHound</span><span class="chip">Kerberos</span></div></article>
+        <div class="chips"><span class="chip">GOAD</span><span class="chip">BloodHound</span><span class="chip">Kerberos</span></div>
+        <p class="repo"><a href="https://github.com/chaimaromdhani/active-directory-red-team">Voir le dépôt →</a></p></article>
       <article class="card"><h3>Pentest web OWASP Juice Shop</h3>
         <p>Exploitation de Juice Shop : injection SQL, XSS, IDOR, JWT falsifié (alg none) et fichiers exposés, avec recommandations de correction.</p>
-        <div class="chips"><span class="chip">Burp Suite</span><span class="chip">Nmap</span><span class="chip">Gobuster</span><span class="chip">JWT</span></div></article>
+        <div class="chips"><span class="chip">Burp Suite</span><span class="chip">Nmap</span><span class="chip">Gobuster</span><span class="chip">JWT</span></div>
+        <p class="repo"><a href="https://github.com/chaimaromdhani/owasp-juice-shop-pentest">Voir le dépôt →</a></p></article>
       <article class="card"><h3>DevSecOps : portail de notes<span class="status">en cours</span></h3>
         <p>Application volontairement vulnérable, image Docker durcie, pipeline CI/CD bloquant, secrets, Kubernetes, DAST, plan de réponse à incident, et chatbot RAG protégé par un pare-feu LLM contre les injections de prompt.</p>
         <div class="chips"><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">CI/CD</span><span class="chip">DAST</span><span class="chip">LLM security</span></div></article>
       <article class="card"><h3>PatchMind<span class="status">en binôme</span></h3>
         <p>Plateforme DevSecOps qui centralise Semgrep, GitLeaks, Snyk et ZAP, génère des correctifs avec des LLM (RAG, FAISS) et les valide automatiquement. 96,2 % de réussite en test.</p>
-        <div class="chips"><span class="chip">Flask</span><span class="chip">FAISS</span><span class="chip">RAG</span><span class="chip">GitHub Actions</span></div></article>
+        <div class="chips"><span class="chip">Flask</span><span class="chip">FAISS</span><span class="chip">RAG</span><span class="chip">GitHub Actions</span></div>
+        <p class="repo"><a href="https://github.com/chaimaromdhani/patchmind">Voir le dépôt →</a></p></article>
+          <article class="card"><h3>Ethereum Gas DoS</h3>
+        <p>Contrat Solidity vulnérable à un déni de service par gas, version corrigée par traitement en lots, validation avec Slither et tests Hardhat.</p>
+        <div class="chips"><span class="chip">Solidity</span><span class="chip">Hardhat</span><span class="chip">Slither</span></div>
+        <p class="repo"><a href="https://github.com/chaimaromdhani/Ethereum_Gas_DoS">Voir le dépôt →</a></p></article>
     </div>
   </section>
 
